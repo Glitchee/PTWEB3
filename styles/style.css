@@ -13,7 +13,24 @@ EN-TETE
 
 .entete{
     height: 250px;
-    background-color: aquamarine;
+    background-image: url(../images/entete.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-blend-mode: luminosity; /*chercher comment régler ça*/
+    display: flex;
+    flex-direction: column;
+}
+
+.entete_logo{
+    width: 40%;
+    align-self: flex-start;
+    margin-left: 3.5em;
+}
+
+.entete_panier{
+    font-size: 20px;
+    align-self: flex-end;
+    margin: 2.5em 5em;
 }
 
 .menu{
@@ -88,22 +105,48 @@ CONTENU PAGE D'ACCUEIL
 }
 
 .tendances_titre{
+    font-size: 22px;
     text-transform: uppercase;
+    color: #17527a;
     margin-left: 2em;
 }
 
 .nouveautes{
+    position: relative;
     width: 98%;
     margin: 30px auto;
     height: 175px;
     display: flex;
-    flex-direction: column-reverse;
-    background-color: darkgrey;
+    flex-direction: row;
+    background-color: #363535;
 }
 
 .nouveautes_titre{
+    position: absolute;
+    bottom: 0;
+    font-size: 22px;
     text-transform: uppercase;
+    color: #4498d2;
     margin-left: 2em;
+}
+
+.nouveautes_item{
+    height: 130px;
+    width: 200px;
+}
+
+.nouveautes_item img{
+    height: 120px;
+    display: block;
+    margin: auto;
+}
+
+.nouveautes_item h3{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 12px;
+    width: 10em;
+    margin: auto;
 }
 
 .designer{
@@ -111,16 +154,25 @@ CONTENU PAGE D'ACCUEIL
     width: 98%;
     height: 166px;
     margin: auto;
-    background-color: darkkhaki;
+    background-image: url(../images/designer.jpg);
+    background-size: cover;
 }
 
 .designer_titre{
+    width: 50%;
+    color: #193d5b;
+    background-color: rgba(242, 242, 242, 0.5);
     font-size: 21px;
-    padding: 1em;
+    padding: 0.5em 1em;
+    margin: 1em 0 0 1em;
 }
 
 .designer_liste{
-    margin-left: 1em;
+    width: 50%;
+    color: #22517f;
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 1.3em;
+    margin-left: 1.35em;
 }
 
 .designer_button{
@@ -129,6 +181,121 @@ CONTENU PAGE D'ACCUEIL
     right: 0;
     padding: 1em 5em;
 }
+
+/*///////////////////////////////////////////////////////////
+PANIER
+///////////////////////////////////////////////////////////*/
+
+.etapes_liste{
+    height: 50px;
+    width: 80%;
+    margin: 2em auto;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #cdcdcd;
+}
+
+.etapes_liste li{
+    display: inline;
+    text-align: center;
+    padding: 1.2em;
+    width: 8em;
+    position: relative;
+}
+
+.etapes_liste li span{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #17527a;
+    color: white;
+    font-weight: bold;
+}
+
+.panier{
+    margin: auto;
+    width: 90%;
+    empty-cells: hide;
+}
+
+td{
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+table img{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+th{
+    height: 50px;
+    background-color: #363535;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+td{
+    height: 70px;
+    padding: 1em;
+}
+
+td input{
+    width: 1.5em;
+    display: block;
+    margin: auto;
+}
+
+.panier_boutons{
+    width: 4em;
+    display: block;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+td button{
+    background-color: #363535;
+    border: 0;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.panier_prix{
+    text-align: center;
+}
+
+.total{
+    font-weight: bold;
+}
+
+.panier_vide{
+    border: 0;
+}
+
+.commande{
+    
+}
+
+/*///////////////////////////////////////////////////////////
+FOOTER
+///////////////////////////////////////////////////////////*/
 
 footer{
     width: 100%;
