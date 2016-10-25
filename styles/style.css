@@ -290,7 +290,13 @@ td button{
 }
 
 .commande{
-    
+    background-color: #363535;
+    border: 0;
+    padding: 0.5em;
+    margin: 2em;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
 }
 
 /*///////////////////////////////////////////////////////////
