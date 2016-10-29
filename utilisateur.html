@@ -14,8 +14,8 @@
     <div class="wrapper">
         <header>
             <div class="entete">
-                <img class="entete_logo" alt="logo" src="images/logo.png"/>
-                <span class="entete_panier"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier</span>
+                <a href="index.html"><img class="entete_logo" alt="logo" src="images/logo.png"/></a>
+                <a class="entete_panier" href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier(1)</a>
             </div>
 
             <ul class="menu">
@@ -76,6 +76,7 @@
         </header>
         
         <section class="utilisateur">
+            <h1 class="utilisateur_titre">Profil</h1>
             <div class="utilisateur_profil">
                 <img class="utilisateur_profil-img" src="./images/510074188.jpg" alt="image de profil"/>
                 <p>Catty68</p>
@@ -87,25 +88,52 @@
             </ul>
             <div class="utilisateur_infos">
                 <p>Téléphone actuel: Iphone 7</p>
-                <p>Type de profil: Client <span>Comment devenir Designer ?</span></p>
-                <div class="utilisateur_articles">
-                    <h2>Dernier(s) article(s) acheté(s) :</h2>
-                    <div class="utilisateur_articles-item">
-                        <img src="images/coque_union_jack.png"/>
-                        <h3 class="utilisateur_articles-nom"></h3>
-                    </div>
-                    <div class="utilisateur_articles-item">
-                        <img src="images/coque_glace.png"/>
-                        <h3 class="utilisateur_articles-nom"></h3>
-                    </div>
-                    <div class="utilisateur_articles-item">
-                        <img src="images/coque_fleurs.png"/>
-                        <h3 class="utilisateur_articles-nom"></h3>
-                    </div>
-                    <div class="utilisateur_articles-item">
-                        <img src="images/coque_rosace_bleue.png"/>
-                        <h3 class="utilisateur_articles-nom"></h3>
-                    </div>
+                <p>Type de profil: Client <a href="#">-Comment devenir Designer ?-</a></p>
+                <p>Tags :</p>
+                <ul class="utilisateur_infos-tags">
+                    <li><button>x</button>Abstrait</li>
+                    <li><button>x</button>Nature</li>
+                    <li><button>x</button>Ethnique</li>
+                </ul>
+            </div>
+            
+            <div class="utilisateur_articles">
+                <h2>Dernier(s) article(s) acheté(s) :</h2>
+                <div class="utilisateur_articles-item">
+                    <img src="images/coque_union_jack.png"/>
+                    <h3 class="utilisateur_articles-nom">Coque smartphone Union Jack</h3>
+                </div>
+                <div class="utilisateur_articles-item">
+                    <img src="images/coque_glace.png"/>
+                    <h3 class="utilisateur_articles-nom">Coque smartphone crème glacée</h3>
+                </div>
+                <div class="utilisateur_articles-item">
+                    <img src="images/coque_fleurs.png"/>
+                    <h3 class="utilisateur_articles-nom">Coque smartphone fleurs</h3>
+                </div>
+                <div class="utilisateur_articles-item">
+                    <img src="images/coque_rosace_bleue.png"/>
+                    <h3 class="utilisateur_articles-nom">Coque smartphone rosace bleue</h3>
+                </div>
+            </div>
+            
+            <div class="utilisateur_recommandations">
+                <h2>Nos recommandations :</h2>
+                <div class="utilisateur_recommandations-item">
+                    <img src="images/coque_rosace.png"/>
+                    <h3 class="utilisateur_recommandations-nom">Coque smartphone rosace</h3>
+                </div>
+                <div class="utilisateur_recommandations-item">
+                    <img src="images/coque_glace2.png"/>
+                    <h3 class="utilisateur_recommandations-nom">Coque smartphone motif glaces</h3>
+                </div>
+                <div class="utilisateur_recommandations-item">
+                    <img src="images/coque_fleurs_bleu.png"/>
+                    <h3 class="utilisateur_recommandations-nom">Coque smartphone motif fleur bleue</h3>
+                </div>
+                <div class="utilisateur_recommandations-item">
+                    <img src="images/coque_abstraite.png"/>
+                    <h3 class="utilisateur_recommandations-nom">Coque smartphone motif abstrait</h3>
                 </div>
             </div>
         </section>

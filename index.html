@@ -14,18 +14,18 @@
     <div class="wrapper">
         <header>
             <div class="entete">
-                <img class="entete_logo" alt="logo" src="images/logo.png"/>
-                <span class="entete_panier"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier</span>
+                <a href="index.html"><img class="entete_logo" alt="logo" src="images/logo.png"/></a>
+                <a class="entete_panier" href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier(1)</a>
             </div>
 
             <ul class="menu">
-                <li class="menu-item"><a href="magasin.html">Toutes les coques</a></li>
-                <li class="menu-item"><a href="#">Housses tablettes</a></li>
+                <li class="menu-item" id="coques"><a href="magasin.html">Toutes les coques</a></li>
+                <li class="menu-item" id="housses"><a href="#">Housses tablettes</a></li>
                 <li class="menu-item"><a href="#">Accessoires</a></li>
                 <li class="menu-item"><a href="utilisateur.html">Mon compte</a></li>
             </ul>
             
-            <div class="menucache">
+            <div class="menucache" id="menuCoques">
                 
                 <ul class="menucache_liste">
                     <h2 class="menucache-titre">Iphone</h2>
@@ -50,7 +50,7 @@
                 </ul>
             </div>
             
-            <div class="menucache2">
+            <div class="menucache2" id="menuHousses">
                     <ul class="menucache_liste">
                         <h2 class="menucache-titre">Apple</h2>
                         <li class="menucache_liste-item">Ipad Air</li>
@@ -76,7 +76,7 @@
         </header>
         
         <section class="tendances">
-            <img class="tendances_img"/>
+            <img class="tendances_img" id="tendances" src="images/images_defilantes.jpg" alt="tendances"/>
             <h1 class="tendances_titre">Les tendances du mois</h1>
         </section>
         
@@ -114,7 +114,7 @@
             </div>
         </footer>
     </div>
-    
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>

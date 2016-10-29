@@ -27,6 +27,8 @@ EN-TETE
 }
 
 .entete_panier{
+    color: black;
+    text-decoration: none;
     font-size: 20px;
     align-self: flex-end;
     margin: 2.5em 5em;
@@ -69,7 +71,7 @@ EN-TETE
 }
 
 .menucache2{
-    margin-left: 20em;
+    margin-left: 19.7em;
 }
 
 .menucache-titre{
@@ -101,19 +103,42 @@ CONTENU PAGE D'ACCUEIL
     display: flex;
     flex-direction: column-reverse;
     background-color: bisque;
+    position: relative;
+    overflow: hidden;
 }
 
 .tendances_titre{
-    font-size: 22px;
+    position: absolute;
+    top: 0;
+    font-size: 24px;
     text-transform: uppercase;
     color: #17527a;
     margin-left: 2em;
+    z-index: 1;
+}
+
+@keyframes defilement{
+    0% {left: 0;}
+    50% {left: -80em;}
+    100% {left: -140em;}
+}
+
+.tendances_img{
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    height: inherit;
+    animation-name: defilement;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .nouveautes{
     position: relative;
     width: 98%;
     margin: 30px auto;
+    padding-top: 1em;
     height: 175px;
     display: flex;
     flex-direction: row;
@@ -122,7 +147,7 @@ CONTENU PAGE D'ACCUEIL
 
 .nouveautes_titre{
     position: absolute;
-    bottom: 0;
+    top: 0;
     font-size: 22px;
     text-transform: uppercase;
     color: #4498d2;
@@ -303,45 +328,142 @@ UTILISATEUR
 ///////////////////////////////////////////////////////////*/
 
 .utilisateur{
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 586px;
+    height: 610px;
+    margin-bottom: 5em;
+}
+
+.utilisateur_titre{
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .utilisateur_profil{
     width: 20%;
-    margin: 5em;
-    float: left;
+    margin: 5em 0 5em 10em;
+    border: 3px solid black;
+    border-radius: 5px;
 }
 
 .utilisateur_profil-img{
     width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.utilisateur_profil p{
+    text-align: center;
+    font-weight: bold;
 }
 
 .utilisateur_liens{
-    width: 50%;
+    width: 30%;
+    margin-left: 10em;
 }
 
 .utilisateur_infos{
-    width: 50%;
-    margin: 5em;
-    display: flex;
-    flex-direction: row;
+    width: 40%;
+    margin-top: 5em;
+}
+
+.utilisateur_infos p{
+    
+}
+
+.utilisateur_infos p a{
+    color: blue;
+    font-size: 14px;
+}
+
+.utilisateur_infos-tags{
+    margin-top: 0.5em;
+}
+
+.utilisateur_infos-tags li{
+    display: inline;
+    background-color: #9ebed8;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.utilisateur_infos-tags li button{
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 2px 5px;
+    background-color: #5d9dd1;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .utilisateur_articles{
-    height: 93px;
+    width: 40%;
+    height: 150px;
     display: flex;
     flex-direction: row;
+    position: relative;
+    margin: 3em 3em 0 0;
+}
+
+.utilisateur_articles h2{
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
 }
 
 .utilisateur_articles-item{
-    width: 25%;
+    width: 20%;
+    height: 150px;
+    margin: 2em 1em 0;
 }
 
 .utilisateur_articles-item img{
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+.utilisateur_articles-nom{
+   font-size: 12px;
+}
+
+.utilisateur_recommandations{
+     width: 40%;
     height: 150px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 4em 3em 0 0;
+}
+
+.utilisateur_recommandations h2{
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+}
+
+.utilisateur_recommandations-item{
+    width: 20%;
+    height: 150px;
+    margin: 2em 1em 0;
+}
+
+.utilisateur_recommandations-item img{
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+.utilisateur_recommandations-nom{
+    font-size: 12px;
 }
 
 /*///////////////////////////////////////////////////////////
