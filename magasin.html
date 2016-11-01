@@ -1,13 +1,246 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <title>StylishPhone</title>
+    <title>StylishPhone.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="styles/reset.css">
+     
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+   
+    <script src="script/jquery-3.1.1.min.js"></script>
 </head>
 
+
 <body>
-    <p>Test</p> 
+    <div class="wrapper">
+        <header>
+            <div class="entete">
+                <img class="entete_logo" alt="logo" src="images/logo.png"/>
+                <span class="entete_panier"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier</span>
+            </div>
+
+            <ul class="menu">
+                <li class="menu-item"><a href="magasin.html">Toutes les coques</a></li>
+                <li class="menu-item"><a href="#">Housses tablettes</a></li>
+                <li class="menu-item"><a href="#">Accessoires</a></li>
+                <li class="menu-item"><a href="utilisateur.html">Mon compte</a></li>
+            </ul>
+            
+            <div class="menucache">
+                
+                <ul class="menucache_liste">
+                    <h2 class="menucache-titre">Iphone</h2>
+                    <li class="menucache_liste-item">Iphone 4/4S</li>
+                    <li class="menucache_liste-item">Iphone 5/5C</li>
+                    <li class="menucache_liste-item">Iphone 6/6S</li>
+                    <li class="menucache_liste-item">Iphone 7</li>
+                </ul>
+                
+                <ul class="menucache_liste">
+                    <h2 class="menucache-titre">Android</h2>
+                    <li class="menucache_liste-item">Samsung Galaxy S</li>
+                    <li class="menucache_liste-item">Samsung Galaxy Note</li>
+                    <li class="menucache_liste-item">Samsung Galaxy J</li>
+                    <li class="menucache_liste-item">Sony Xperia</li>
+                    <li class="menucache_liste-item">Autres marques</li>
+                </ul>
+                
+                <ul class="menucache_liste">
+                    <h2 class="menucache-titre">Windows Phone</h2>
+                    <li class="menucache_liste-item">Microsoft Lumia</li>
+                </ul>
+            </div>
+            
+            <div class="menucache2">
+                    <ul class="menucache_liste">
+                        <h2 class="menucache-titre">Apple</h2>
+                        <li class="menucache_liste-item">Ipad Air</li>
+                        <li class="menucache_liste-item">Ipad Pro</li>
+                        <li class="menucache_liste-item">Ipad Mini</li>
+                    </ul>
+                
+                    <ul class="menucache_liste">
+                        <h2 class="menucache-titre">Samsung</h2>
+                        <li class="menucache_liste-item">Samsung Galaxy tab</li>
+                        <li class="menucache_liste-item">Autres références</li>
+                    </ul>
+            
+                    <ul class="menucache_liste">
+                        <h2 class="menucache-titre">Autres marques</h2>
+                        <li class="menucache_liste-item">Microsoft Surface</li>
+                        <li class="menucache_liste-item">Lenovo</li>
+                        <li class="menucache_liste-item">Polaroid</li>
+                        <li class="menucache_liste-item">Asus</li>
+                        <li class="menucache_liste-item">Archos</li>
+                    </ul>
+            </div>
+        </header>
+        
+        <section class="contenu_magasin">
+           <article class="aside_magasin">
+              <div class="aside_magasin_container">
+                   <h1>Filtres</h1>
+                   
+
+                   <h2>Modèle de téléphone</h2>
+                        <select name="cars" onchange="location = this.value;" class="modele_phone">
+                            <option value="magasin.html">Iphone 4</option>
+                            <option value="magasin.html">Iphone 5</option>
+                            <option value="magasin.html">Iphone 6</option>
+                            <option value="magasin.html">Samsung Galaxy S</option>
+                            <option value="magasin.html">Samsung Galaxy Note</option>
+                            <option value="magasin.html">Samsung Galaxy J</option>
+                            <option value="magasin.html">Sony Xperia</option>
+                            <option value="magasin.html">Windows Phone</option>
+                            <option value="magasin.html">Microsoft Lumia</option>
+                            
+                        </select>
+
+                   <h2>Thèmes</h2>
+                   <h4>Nature</h4>
+                    <form action="">
+                        <input type="checkbox" name="vehicle" value="Bike" id="nature">Animaux<br>
+                        <input type="checkbox" name="vehicle" value="Bike" id="nature">Végétal<br>
+                        <input type="checkbox" name="vehicle" value="Car">Paysage
+                    </form>
+                    <h4>Imaginaire</h4>
+                    <form action="">
+                        <input type="checkbox" name="vehicle" value="Bike" id="fantasy">Fantasy<br>
+                         <input type="checkbox" name="vehicle" value="Bike" id="SF">Science-fiction<br>
+                    </form>
+                     <h4>Pop culture</h4>
+                    <form action="">
+                        <input type="checkbox" name="vehicle" value="Bike">Mangas<br>
+                        <input type="checkbox" name="vehicle" value="Bike">Comics<br>
+                        <input type="checkbox" name="vehicle" value="Bike">Jeux-vidéos<br>
+                         <input type="checkbox" name="vehicle" value="Bike">Logo<br>
+                    </form>
+                    <h4>Pop culture</h4>
+                    <form action="">
+                        <input type="checkbox" name="vehicle" value="Bike">Symboles<br>
+                        <input type="checkbox" name="vehicle" value="Bike">Formes géométriques<br>
+                        <input type="checkbox" name="vehicle" value="Bike">Fond uni<br>
+                         
+                    </form>
+               </div>
+             
+           </article>
+           
+          
+           
+           <article class="articles_magasin">
+               
+               <div class="filtrage_magasin">
+                  <form>
+                       <input type="text" name="search">
+                      <a href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+                   </form>
+                   
+                   <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Trier &nbsp;▼</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Du moins cher au plus cher</a>
+                        <a href="#">Du plus cher au moins cher</a>
+                        <a href="#">En stock</a>
+                      </div>
+                    </div>
+                   
+               </div>
+               
+                <div class="article">
+                 <a href="produit.html">
+                      <img src="images/coque_glace.png">
+                      <p>Coque iPhone5 design glace</p>
+                      <h1>14,99€</h1>
+                      <i class="fa fa-check" aria-hidden="true"></i><h3>En stock</h3><br/>
+                      <button>Ajouter au panier</button>
+                    </a>
+              </div>
+              
+                 <div class="article">
+                 <a href="produit.html">
+                      <img src="images/coque_glace.png">
+                      <p>Coque iPhone5 design glace</p>
+                      <h1>14,99€</h1>
+                      <i class="fa fa-check" aria-hidden="true"></i><h3>En stock</h3><br/>
+                      <button>Ajouter au panier</button>
+                    </a>
+              </div>
+                        
+                  <div class="article">
+                 <a href="produit.html">
+                      <img src="images/coque_glace.png">
+                      <p>Coque iPhone5 design glace</p>
+                      <h1>14,99€</h1>
+                      <i class="fa fa-check" aria-hidden="true"></i><h3>En stock</h3><br/>
+                      <button>Ajouter au panier</button>
+                    </a>
+              </div>
+              
+              <div class="article">
+                 <a href="produit.html">
+                      <img src="images/coque_glace.png">
+                      <p>Coque iPhone5 design glace</p>
+                      <h1>14,99€</h1>
+                      <i class="fa fa-check" aria-hidden="true"></i><h3>En stock</h3><br/>
+                      <button>Ajouter au panier</button>
+                    </a>
+              </div>
+               
+                <div class="article" id="hide_SF">
+                 <a href="produit.html">
+                      <img src="images/coque_glace.png">
+                      <p>Coque iPhone5 design glace</p>
+                      <h1>14,99€</h1>
+                      <i class="fa fa-check" aria-hidden="true"></i><h3>En stock</h3><br/>
+                      <button>Ajouter au panier</button>
+                    </a>
+              </div>
+               
+                
+               
+               <div class="article" id="hide_fantasy">
+                 <a href="produit.html">
+                      <img src="images/coque_glace.png">
+                      <p>Coque iPhone5 design glace</p>
+                      <h1>14,99€</h1>
+                      <i class="fa fa-check" aria-hidden="true"></i><h3>En stock</h3><br/>
+                      <button>Ajouter au panier</button>
+                    </a>
+              </div>
+              
+                               
+          
+                    
+                                
+                           
+           </article>
+            
+        </section>
+        
+        
+        <footer>
+            <div class="footer_text">
+                <p class="footer_p">Crédits</p>
+                <p class="footer_p">Plan du site</p>
+                <p class="footer_p">Mentions légales</p>
+            </div>
+            <div class="footer_logos">
+                <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/magasin.js"></script>
 </body>
+
+
 
 </html>
