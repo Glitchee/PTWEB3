@@ -3,7 +3,7 @@
 <head>
     <title>StylishPhone.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -12,69 +12,73 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <div class="entete">
-                <a href="index.html"><img class="entete_logo" alt="logo" src="images/logo.png"/></a>
-                <a class="entete_panier" href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier</a>
-            </div>
+      <header>
+          <div class="entete">
+              <a href="index.html"><img class="entete_logo" alt="logo" src="images/logo.png"/></a>
+              <a class="entete_panier" href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier(1)</a>
+          </div>
 
+          <div id="menu">
             <ul class="menu">
-                <li class="menu-item"><a href="magasin.html">Toutes les coques</a></li>
-                <li class="menu-item"><a href="#">Housses tablettes</a></li>
+                <li class="menu-item" id="coques"><a href="magasin.html">Toutes les coques</a></li>
+                <li class="menu-item" id="housses"><a href="#">Housses tablettes</a></li>
                 <li class="menu-item"><a href="#">Accessoires</a></li>
                 <li class="menu-item"><a href="utilisateur.html">Mon compte</a></li>
             </ul>
-            
-            <div class="menucache">
-                
-                <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Iphone</h2>
-                    <li class="menucache_liste-item">Iphone 4/4S</li>
-                    <li class="menucache_liste-item">Iphone 5/5C</li>
-                    <li class="menucache_liste-item">Iphone 6/6S</li>
-                    <li class="menucache_liste-item">Iphone 7</li>
-                </ul>
-                
-                <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Android</h2>
-                    <li class="menucache_liste-item">Samsung Galaxy S</li>
-                    <li class="menucache_liste-item">Samsung Galaxy Note</li>
-                    <li class="menucache_liste-item">Samsung Galaxy J</li>
-                    <li class="menucache_liste-item">Sony Xperia</li>
-                    <li class="menucache_liste-item">Autres marques</li>
-                </ul>
-                
-                <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Windows Phone</h2>
-                    <li class="menucache_liste-item">Microsoft Lumia</li>
-                </ul>
-            </div>
-            
-            <div class="menucache2">
-                    <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Apple</h2>
-                        <li class="menucache_liste-item">Ipad Air</li>
-                        <li class="menucache_liste-item">Ipad Pro</li>
-                        <li class="menucache_liste-item">Ipad Mini</li>
-                    </ul>
-                
-                    <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Samsung</h2>
-                        <li class="menucache_liste-item">Samsung Galaxy tab</li>
-                        <li class="menucache_liste-item">Autres références</li>
-                    </ul>
-            
-                    <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Autres marques</h2>
-                        <li class="menucache_liste-item">Microsoft Surface</li>
-                        <li class="menucache_liste-item">Lenovo</li>
-                        <li class="menucache_liste-item">Polaroid</li>
-                        <li class="menucache_liste-item">Asus</li>
-                        <li class="menucache_liste-item">Archos</li>
-                    </ul>
-            </div>
-        </header>
-        
+            <i class="fa fa-bars fa-3x" id="burgermenu" aria-hidden="true"></i>
+          </div>
+
+          <div class="menucache" id="menuCoques">
+
+              <h2 class="menucache-titre">Iphone</h2>
+              <ul class="menucache_liste">
+                  <li class="menucache_liste-item">Iphone 4/4S</li>
+                  <li class="menucache_liste-item">Iphone 5/5C</li>
+                  <li class="menucache_liste-item">Iphone 6/6S</li>
+                  <li class="menucache_liste-item">Iphone 7</li>
+              </ul>
+
+              <h2 class="menucache-titre">Android</h2>
+              <ul class="menucache_liste">
+                  <li class="menucache_liste-item">Samsung Galaxy S</li>
+                  <li class="menucache_liste-item">Samsung Galaxy Note</li>
+                  <li class="menucache_liste-item">Samsung Galaxy J</li>
+                  <li class="menucache_liste-item">Sony Xperia</li>
+                  <li class="menucache_liste-item">Autres marques</li>
+              </ul>
+
+              <h2 class="menucache-titre">Windows Phone</h2>
+              <ul class="menucache_liste">
+                  <li class="menucache_liste-item">Microsoft Lumia</li>
+              </ul>
+          </div>
+
+          <div class="menucache2" id="menuHousses">
+
+                  <h2 class="menucache-titre">Apple</h2>
+                  <ul class="menucache_liste">
+                      <li class="menucache_liste-item">Ipad Air</li>
+                      <li class="menucache_liste-item">Ipad Pro</li>
+                      <li class="menucache_liste-item">Ipad Mini</li>
+                  </ul>
+
+                  <h2 class="menucache-titre">Samsung</h2>
+                  <ul class="menucache_liste">
+                      <li class="menucache_liste-item">Samsung Galaxy tab</li>
+                      <li class="menucache_liste-item">Autres références</li>
+                  </ul>
+
+                  <h2 class="menucache-titre">Autres marques</h2>
+                  <ul class="menucache_liste">
+                      <li class="menucache_liste-item">Microsoft Surface</li>
+                      <li class="menucache_liste-item">Lenovo</li>
+                      <li class="menucache_liste-item">Polaroid</li>
+                      <li class="menucache_liste-item">Asus</li>
+                      <li class="menucache_liste-item">Archos</li>
+                  </ul>
+          </div>
+      </header>
+
         <div class="etapes">
             <ol class="etapes_liste">
                 <li class="etapes_liste-item"><span>1</span> Récapitulatif</li>
@@ -84,8 +88,8 @@
                 <li class="etapes_liste-item"><span>5</span> Paiement</li>
             </ol>
         </div>
-        
-        <form action="panier.html" method="POST">
+
+        <form action="panier.html">
             <table class="panier">
                 <tr class="panier_entete">
                     <th>Produit</th>
@@ -96,25 +100,28 @@
                 <tr class="panier_contenu">
                     <td><img src="images/coque_glace.png" alt="coque crème glacée"></td>
                     <td>Coque de smartphone motif crème glacée</td>
-                    <td><input type="text" name="quantite" value="1"/><div class="panier_boutons"><button>-</button><button>+</button></div></td>
+                    <td><input type="text" id="quantite" name="quantite" value="1" maxlength="2"/><div class="panier_boutons"><button id="moins">-</button><button id="plus">+</button></div></td>
                     <td class="panier_prix">14,99 €</td>
+                    <td class="panier_vide"><button class="panier_suppprimer">Supprimer l'article</button></td>
                 </tr>
                 <tr>
                     <td class="panier_vide"></td>
                     <td class="panier_vide"></td>
                     <td>+ frais de port</td>
                     <td class="panier_prix">2,99€</td>
+                    <td class="panier_vide"></td>
                 </tr>
                 <tr>
                     <td class="panier_vide"></td>
                     <td class="panier_vide"></td>
                     <td>Total</td>
                     <td class="panier_prix total">17,98€</td>
+                    <td class="panier_vide"></td>
                 </tr>
             </table>
             <input class="commande" type="submit" value="Passer commande"/>
         </form>
-        
+
         <footer>
             <div class="footer_text">
                 <p class="footer_p">Crédits</p>
@@ -128,6 +135,7 @@
             </div>
         </footer>
     </div>
+    <script src="scripts/scripts_panier.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 <head>
     <title>StylishPhone.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -18,54 +18,58 @@
                 <a class="entete_panier" href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier(1)</a>
             </div>
 
-            <ul class="menu">
-                <li class="menu-item" id="coques"><a href="magasin.html">Toutes les coques</a></li>
-                <li class="menu-item" id="housses"><a href="#">Housses tablettes</a></li>
-                <li class="menu-item"><a href="#">Accessoires</a></li>
-                <li class="menu-item"><a href="utilisateur.html">Mon compte</a></li>
-            </ul>
-            
+            <div class="menu_conteneur" id="menu">
+              <ul class="menu">
+                  <li class="menu-item" id="coques"><a href="magasin.html">Toutes les coques</a></li>
+                  <li class="menu-item" id="housses"><a href="#">Housses tablettes</a></li>
+                  <li class="menu-item"><a href="#">Accessoires</a></li>
+                  <li class="menu-item"><a href="utilisateur.html">Mon compte</a></li>
+              </ul>
+              <i class="fa fa-bars fa-3x" id="burgermenu" aria-hidden="true"></i>
+            </div>
+
             <div class="menucache" id="menuCoques">
-                
+                <h2 class="menucache-titre">Iphone</h2>
+                <h2 class="menucache-titre">Android</h2>
+                <h2 class="menucache-titre">Windows Phone</h2>
+
                 <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Iphone</h2>
                     <li class="menucache_liste-item">Iphone 4/4S</li>
                     <li class="menucache_liste-item">Iphone 5/5C</li>
                     <li class="menucache_liste-item">Iphone 6/6S</li>
                     <li class="menucache_liste-item">Iphone 7</li>
                 </ul>
-                
+
                 <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Android</h2>
                     <li class="menucache_liste-item">Samsung Galaxy S</li>
                     <li class="menucache_liste-item">Samsung Galaxy Note</li>
                     <li class="menucache_liste-item">Samsung Galaxy J</li>
                     <li class="menucache_liste-item">Sony Xperia</li>
                     <li class="menucache_liste-item">Autres marques</li>
                 </ul>
-                
+
                 <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Windows Phone</h2>
                     <li class="menucache_liste-item">Microsoft Lumia</li>
                 </ul>
             </div>
-            
+
             <div class="menucache2" id="menuHousses">
+                    <h2 class="menucache-titre">Apple</h2>
+                    <h2 class="menucache-titre">Samsung</h2>
+                    <h2 class="menucache-titre">Autres marques</h2>
+
                     <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Apple</h2>
                         <li class="menucache_liste-item">Ipad Air</li>
                         <li class="menucache_liste-item">Ipad Pro</li>
                         <li class="menucache_liste-item">Ipad Mini</li>
                     </ul>
-                
+
                     <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Samsung</h2>
                         <li class="menucache_liste-item">Samsung Galaxy tab</li>
                         <li class="menucache_liste-item">Autres références</li>
                     </ul>
-            
+
                     <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Autres marques</h2>
                         <li class="menucache_liste-item">Microsoft Surface</li>
                         <li class="menucache_liste-item">Lenovo</li>
                         <li class="menucache_liste-item">Polaroid</li>
@@ -74,23 +78,78 @@
                     </ul>
             </div>
         </header>
-        
+
         <section class="tendances">
             <img class="tendances_img" id="tendances" src="images/images_defilantes.jpg" alt="tendances"/>
             <h1 class="tendances_titre">Les tendances du mois</h1>
         </section>
-        
+
         <section class="nouveautes">
-            <div class="nouveautes_item"><img src="images/coque_union_jack.png" alt="coque union jack"><h3 class="nouveautes_item-nom">Coque smartphone Union Jack</h3></div>
-            <div class="nouveautes_item"><img src="images/coque_rosace_bleue.png" alt="coque rosace bleue"><h3 class="nouveautes_item-nom">Coque smartphone rosace bleue</h3></div>
-            <div class="nouveautes_item"><img src="images/coque_glace2.png" alt="coque glaces"><h3 class="nouveautes_item-nom">Coque smartphone motif glaces</h3></div>
-            <div class="nouveautes_item"><img src="images/coque_fleurs.png" alt="coque fleurs"><h3 class="nouveautes_item-nom">Coque smartphone fleurs brunes</h3></div>
-            <div class="nouveautes_item"><img src="images/coque_glace.png" alt="coque glace"><h3 class="nouveautes_item-nom">Coque smartphone crème glacée</h3></div>
-            <div class="nouveautes_item"><img src="images/coque_rosace.png" alt="coque rosace"><h3 class="nouveautes_item-nom">Coque smartphone rosace</h3></div>
-            <div class="nouveautes_item"><img src="images/coque_fleurs_bleu.png" alt="coque fleurs bleues"><h3 class="nouveautes_item-nom">Coque smartphone motif fleur bleue</h3></div>
+            <i class="fa fa-angle-left fa-5x" id="flechegauche" aria-hidden="true"></i>
             <h1 class="nouveautes_titre">Nouveautés</h1>
+
+            <div class="nouveautes_allitems" id="allitems">
+                <div class="nouveautes_item">
+                    <img src="images/coque_union_jack.png" alt="coque union jack">
+                    <h3 class="nouveautes_item-nom">Coque smartphone Union Jack</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_rosace_bleue.png" alt="coque rosace bleue">
+                    <h3 class="nouveautes_item-nom">Coque smartphone rosace bleue</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_glace2.png" alt="coque glaces">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif glaces</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_fleurs.png" alt="coque fleurs">
+                    <h3 class="nouveautes_item-nom">Coque smartphone fleurs brunes</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_glace.png" alt="coque glace">
+                    <h3 class="nouveautes_item-nom">Coque smartphone crème glacée</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_rosace.png" alt="coque rosace">
+                    <h3 class="nouveautes_item-nom">Coque smartphone rosace</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_fleurs_bleu.png" alt="coque fleurs bleues">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif fleur bleue</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_abstraite.png" alt="coque abstraite">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif abstrait</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_abstraite.png" alt="coque abstraite">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif abstrait</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_abstraite.png" alt="coque abstraite">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif abstrait</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_abstraite.png" alt="coque abstraite">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif abstrait</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_abstraite.png" alt="coque abstraite">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif abstrait</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_abstraite.png" alt="coque abstraite">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif abstrait</h3>
+                </div>
+                <div class="nouveautes_item">
+                    <img src="images/coque_abstraite.png" alt="coque abstraite">
+                    <h3 class="nouveautes_item-nom">Coque smartphone motif abstrait</h3>
+                </div>
+            </div>
+
+            <i class="fa fa-angle-right fa-5x" id="flechedroite" aria-hidden="true"></i>
         </section>
-        
+
         <section class="designer">
             <h1 class="designer_titre">Votre propre design sur notre site ! passez au compte designer !</h1>
             <ul class="designer_liste">
@@ -100,7 +159,7 @@
             </ul>
             <button class="designer_button">En savoir plus</button>
         </section>
-        
+
         <footer>
             <div class="footer_text">
                 <p class="footer_p">Crédits</p>

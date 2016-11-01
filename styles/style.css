@@ -16,22 +16,29 @@ EN-TETE
     background-image: url(../images/entete.jpg);
     background-size: 100%;
     background-position: top;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .entete_logo{
+    position: absolute;
+    top: 0;
     width: 40%;
-    align-self: flex-start;
     margin-left: 3.5em;
 }
 
 .entete_panier{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     color: black;
     text-decoration: none;
     font-size: 20px;
-    align-self: flex-end;
-    margin: 2.5em 5em;
+    padding: 10px;
+}
+
+.menu_conteneur{
+    height: 3em;
+    position: relative;
 }
 
 .menu{
@@ -39,14 +46,20 @@ EN-TETE
     background-color: #363535;
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 
 .menu > li{
-    display: inline;
     height: 100%;
     width: 100%;
     text-transform: uppercase;
     color: white;
+}
+
+.fa-bars{
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .menu > li:hover{
@@ -62,12 +75,14 @@ EN-TETE
 }
 
 .menucache, .menucache2{
-    /*height: 165px;*/
     height: 0;
     overflow: hidden;
     background-color: #404040;
-    width: 50%;
+    width: 30%;
     border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .menucache2{
@@ -75,15 +90,16 @@ EN-TETE
 }
 
 .menucache-titre{
+    margin: 0 1em 1em 2em;
     text-transform: uppercase;
     font-size: 14px;
     color: white;
-    margin-bottom: 0.5em;
+    justify-content: space-between;
 }
 
 .menucache_liste{
-    float: left;
-    margin: 1em;
+    margin-right: 1em;
+    justify-content: space-between;
 }
 
 .menucache_liste > li{
@@ -113,6 +129,8 @@ CONTENU PAGE D'ACCUEIL
     font-size: 24px;
     text-transform: uppercase;
     color: #17527a;
+    background-color: rgba(242, 242, 242, 0.7);
+    padding: 0.2em 0.5em;
     margin-left: 2em;
     z-index: 1;
 }
@@ -140,9 +158,8 @@ CONTENU PAGE D'ACCUEIL
     margin: 30px auto;
     padding-top: 1em;
     height: 175px;
-    display: flex;
-    flex-direction: row;
     background-color: #363535;
+    overflow: hidden;
 }
 
 .nouveautes_titre{
@@ -150,17 +167,43 @@ CONTENU PAGE D'ACCUEIL
     top: 0;
     font-size: 22px;
     text-transform: uppercase;
-    color: #4498d2;
-    margin-left: 2em;
+    color: #22517f;
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 0.3em;
+}
+
+.nouveautes_allitems{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.nouveautes .fa{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-angle-right{
+    right: 0;
+    top: 25%;
+}
+
+.fa-angle-left{
+    left: 0;
+    top: 25%;
+    z-index: 1;
 }
 
 .nouveautes_item{
+    margin-top: 1.2em;
     height: 130px;
-    width: 200px;
+    width: 150px;
 }
 
 .nouveautes_item img{
     height: 120px;
+    width: auto;
     display: block;
     margin: auto;
 }
@@ -203,7 +246,12 @@ CONTENU PAGE D'ACCUEIL
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 1em 5em;
+    padding: 1em 4em;
+    background-color: #d95a60;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 /*///////////////////////////////////////////////////////////
@@ -231,7 +279,6 @@ PANIER
 }
 
 .etapes_liste li span{
-    display: block;
     position: absolute;
     left: 0;
     bottom: 10px;
@@ -245,6 +292,11 @@ PANIER
     background-color: #17527a;
     color: white;
     font-weight: bold;
+}
+
+form{
+    position: relative;
+    margin-bottom: 8em;
 }
 
 .panier{
@@ -285,13 +337,12 @@ td input{
 
 .panier_boutons{
     width: 4em;
-    display: block;
     margin: 1em auto;
     display: flex;
     justify-content: space-between;
 }
 
-td button{
+#plus, #moins{
     background-color: #363535;
     border: 0;
     height: 25px;
@@ -313,6 +364,14 @@ td button{
     border: 0;
 }
 
+.panier_supprimer{
+    background-color: #363535;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
 .commande{
     background-color: #363535;
     border: 0;
@@ -321,6 +380,8 @@ td button{
     font-size: 18px;
     color: white;
     cursor: pointer;
+    position: absolute;
+    right: 0;
 }
 
 /*///////////////////////////////////////////////////////////
@@ -329,16 +390,22 @@ UTILISATEUR
 
 .utilisateur{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 610px;
     margin-bottom: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.utilisateur_gauche{
+    width: 50%;
+}
+
+.utilisateur_droite{
+    width: 50%;
 }
 
 .utilisateur_titre{
-    position: absolute;
-    top: 1em;
+    margin-top: 1em;
     text-align: center;
     width: 100%;
     font-size: 24px;
@@ -346,9 +413,9 @@ UTILISATEUR
 }
 
 .utilisateur_profil{
-    width: 20%;
-    margin: 5em 0 5em 10em;
-    border: 3px solid black;
+    width: 40%;
+    margin: 5em 0 5em 15em;
+    border: 3px solid #363535;
     border-radius: 5px;
 }
 
@@ -364,22 +431,28 @@ UTILISATEUR
 }
 
 .utilisateur_liens{
-    width: 30%;
-    margin-left: 10em;
+    width: 40%;
+    margin-left: 15em;
+}
+
+.utilisateur_liens-item{
+    color: black;
+    text-decoration: none;
 }
 
 .utilisateur_infos{
-    width: 40%;
+    width: 80%;
     margin-top: 5em;
-}
-
-.utilisateur_infos p{
-    
+    line-height: 35px;
 }
 
 .utilisateur_infos p a{
     color: blue;
     font-size: 14px;
+}
+
+.utilisateur_infos p b{
+  font-weight: bold;
 }
 
 .utilisateur_infos-tags{
@@ -405,23 +478,28 @@ UTILISATEUR
 }
 
 .utilisateur_articles{
-    width: 40%;
-    height: 150px;
+    width: 90%;
+    height: 200px;
     display: flex;
     flex-direction: row;
     position: relative;
     margin: 3em 3em 0 0;
+    background-color: #363535;
+    padding: 0.5em;
+    border-radius: 5px;
 }
 
 .utilisateur_articles h2{
     position: absolute;
     top: 0;
     text-transform: uppercase;
+    padding: 0.2em;
+    color: white;
 }
 
 .utilisateur_articles-item{
     width: 20%;
-    height: 150px;
+    height: 170px;
     margin: 2em 1em 0;
 }
 
@@ -432,22 +510,29 @@ UTILISATEUR
 }
 
 .utilisateur_articles-nom{
-   font-size: 12px;
+    font-size: 12px;
+    color: whitesmoke;
+    text-align: center;
 }
 
 .utilisateur_recommandations{
-     width: 40%;
-    height: 150px;
+    width: 90%;
+    height: 200px;
     display: flex;
     flex-direction: row;
     position: relative;
-    margin: 4em 3em 0 0;
+    margin: 3em 3em 0 0;
+    background-color: #363535;
+    padding: 0.5em;
+    border-radius: 5px;
 }
 
 .utilisateur_recommandations h2{
     position: absolute;
     top: 0;
     text-transform: uppercase;
+    padding: 0.2em;
+    color: white;
 }
 
 .utilisateur_recommandations-item{
@@ -464,6 +549,8 @@ UTILISATEUR
 
 .utilisateur_recommandations-nom{
     font-size: 12px;
+    color: whitesmoke;
+    text-align: center;
 }
 
 /*///////////////////////////////////////////////////////////
@@ -493,5 +580,51 @@ footer{
     justify-content: space-between;
 }
 
+/*///////////////////////////////////////////////////////////
+MEDIA QUERIES
+///////////////////////////////////////////////////////////*/
 
-
+@media screen and (max-width: 480px){
+    .menu li{
+        display: none;
+    }
+    .fa-bars{
+        height: auto;
+        color: white;
+        position: absolute;
+        right: 10px;
+    }
+    .tendances{
+        height: 280px;
+        background-color: transparent;
+    }
+    @keyframes defilementResp{
+        0% {left: 0;}
+        50% {left: -40em;}
+        100% {left: -80em;}
+    }
+    .tendances_img{
+        height: 240px;
+        animation-name: defilementResp;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .tendances_titre, .nouveautes_titre{
+       font-size: 14px;
+       margin-left: 1em;
+    }
+    .designer_titre, .designer_liste{
+        width: 90%;
+        margin: 0;
+    }
+    .designer_titre{
+        font-size: 14px;
+    }
+    .designer_liste{
+        font-size: 12px;
+    }
+    .designer_button{
+        padding: 0.5em 1em;
+    }
+}

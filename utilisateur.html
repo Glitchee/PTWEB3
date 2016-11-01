@@ -3,7 +3,7 @@
 <head>
     <title>StylishPhone.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -12,132 +12,144 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <div class="entete">
-                <a href="index.html"><img class="entete_logo" alt="logo" src="images/logo.png"/></a>
-                <a class="entete_panier" href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier(1)</a>
-            </div>
+      <header>
+          <div class="entete">
+              <a href="index.html"><img class="entete_logo" alt="logo" src="images/logo.png"/></a>
+              <a class="entete_panier" href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier(1)</a>
+          </div>
 
+          <div id="menu">
             <ul class="menu">
-                <li class="menu-item"><a href="magasin.html">Toutes les coques</a></li>
-                <li class="menu-item"><a href="#">Housses tablettes</a></li>
+                <li class="menu-item" id="coques"><a href="magasin.html">Toutes les coques</a></li>
+                <li class="menu-item" id="housses"><a href="#">Housses tablettes</a></li>
                 <li class="menu-item"><a href="#">Accessoires</a></li>
                 <li class="menu-item"><a href="utilisateur.html">Mon compte</a></li>
             </ul>
-            
-            <div class="menucache">
-                
-                <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Iphone</h2>
-                    <li class="menucache_liste-item">Iphone 4/4S</li>
-                    <li class="menucache_liste-item">Iphone 5/5C</li>
-                    <li class="menucache_liste-item">Iphone 6/6S</li>
-                    <li class="menucache_liste-item">Iphone 7</li>
-                </ul>
-                
-                <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Android</h2>
-                    <li class="menucache_liste-item">Samsung Galaxy S</li>
-                    <li class="menucache_liste-item">Samsung Galaxy Note</li>
-                    <li class="menucache_liste-item">Samsung Galaxy J</li>
-                    <li class="menucache_liste-item">Sony Xperia</li>
-                    <li class="menucache_liste-item">Autres marques</li>
-                </ul>
-                
-                <ul class="menucache_liste">
-                    <h2 class="menucache-titre">Windows Phone</h2>
-                    <li class="menucache_liste-item">Microsoft Lumia</li>
-                </ul>
-            </div>
-            
-            <div class="menucache2">
-                    <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Apple</h2>
-                        <li class="menucache_liste-item">Ipad Air</li>
-                        <li class="menucache_liste-item">Ipad Pro</li>
-                        <li class="menucache_liste-item">Ipad Mini</li>
-                    </ul>
-                
-                    <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Samsung</h2>
-                        <li class="menucache_liste-item">Samsung Galaxy tab</li>
-                        <li class="menucache_liste-item">Autres références</li>
-                    </ul>
-            
-                    <ul class="menucache_liste">
-                        <h2 class="menucache-titre">Autres marques</h2>
-                        <li class="menucache_liste-item">Microsoft Surface</li>
-                        <li class="menucache_liste-item">Lenovo</li>
-                        <li class="menucache_liste-item">Polaroid</li>
-                        <li class="menucache_liste-item">Asus</li>
-                        <li class="menucache_liste-item">Archos</li>
-                    </ul>
-            </div>
-        </header>
-        
+            <i class="fa fa-bars fa-3x" id="burgermenu" aria-hidden="true"></i>
+          </div>
+
+          <div class="menucache" id="menuCoques">
+
+              <h2 class="menucache-titre">Iphone</h2>
+              <ul class="menucache_liste">
+                  <li class="menucache_liste-item">Iphone 4/4S</li>
+                  <li class="menucache_liste-item">Iphone 5/5C</li>
+                  <li class="menucache_liste-item">Iphone 6/6S</li>
+                  <li class="menucache_liste-item">Iphone 7</li>
+              </ul>
+
+              <h2 class="menucache-titre">Android</h2>
+              <ul class="menucache_liste">
+                  <li class="menucache_liste-item">Samsung Galaxy S</li>
+                  <li class="menucache_liste-item">Samsung Galaxy Note</li>
+                  <li class="menucache_liste-item">Samsung Galaxy J</li>
+                  <li class="menucache_liste-item">Sony Xperia</li>
+                  <li class="menucache_liste-item">Autres marques</li>
+              </ul>
+
+              <h2 class="menucache-titre">Windows Phone</h2>
+              <ul class="menucache_liste">
+                  <li class="menucache_liste-item">Microsoft Lumia</li>
+              </ul>
+          </div>
+
+          <div class="menucache2" id="menuHousses">
+
+                  <h2 class="menucache-titre">Apple</h2>
+                  <ul class="menucache_liste">
+                      <li class="menucache_liste-item">Ipad Air</li>
+                      <li class="menucache_liste-item">Ipad Pro</li>
+                      <li class="menucache_liste-item">Ipad Mini</li>
+                  </ul>
+
+                  <h2 class="menucache-titre">Samsung</h2>
+                  <ul class="menucache_liste">
+                      <li class="menucache_liste-item">Samsung Galaxy tab</li>
+                      <li class="menucache_liste-item">Autres références</li>
+                  </ul>
+
+                  <h2 class="menucache-titre">Autres marques</h2>
+                  <ul class="menucache_liste">
+                      <li class="menucache_liste-item">Microsoft Surface</li>
+                      <li class="menucache_liste-item">Lenovo</li>
+                      <li class="menucache_liste-item">Polaroid</li>
+                      <li class="menucache_liste-item">Asus</li>
+                      <li class="menucache_liste-item">Archos</li>
+                  </ul>
+          </div>
+      </header>
+
+        <h1 class="utilisateur_titre">Profil</h1>
         <section class="utilisateur">
-            <h1 class="utilisateur_titre">Profil</h1>
-            <div class="utilisateur_profil">
+
+            <div class="utilisateur_gauche">
+                <div class="utilisateur_profil">
                 <img class="utilisateur_profil-img" src="./images/510074188.jpg" alt="image de profil"/>
                 <p>Catty68</p>
-            </div>
-            <ul class="utilisateur_liens">
-                <li class="utilisateur_liens-item">Passer au compte Designer</li>
-                <li class="utilisateur_liens-item">Recommander StylishPhone</li>
-                <li class="utilisateur_liens-item">Conditions d'utilisation</li>
-            </ul>
-            <div class="utilisateur_infos">
-                <p>Téléphone actuel: Iphone 7</p>
-                <p>Type de profil: Client <a href="#">-Comment devenir Designer ?-</a></p>
-                <p>Tags :</p>
-                <ul class="utilisateur_infos-tags">
-                    <li><button>x</button>Abstrait</li>
-                    <li><button>x</button>Nature</li>
-                    <li><button>x</button>Ethnique</li>
-                </ul>
-            </div>
-            
-            <div class="utilisateur_articles">
-                <h2>Dernier(s) article(s) acheté(s) :</h2>
-                <div class="utilisateur_articles-item">
-                    <img src="images/coque_union_jack.png"/>
-                    <h3 class="utilisateur_articles-nom">Coque smartphone Union Jack</h3>
                 </div>
-                <div class="utilisateur_articles-item">
-                    <img src="images/coque_glace.png"/>
-                    <h3 class="utilisateur_articles-nom">Coque smartphone crème glacée</h3>
-                </div>
-                <div class="utilisateur_articles-item">
-                    <img src="images/coque_fleurs.png"/>
-                    <h3 class="utilisateur_articles-nom">Coque smartphone fleurs</h3>
-                </div>
-                <div class="utilisateur_articles-item">
-                    <img src="images/coque_rosace_bleue.png"/>
-                    <h3 class="utilisateur_articles-nom">Coque smartphone rosace bleue</h3>
+                <div class="utilisateur_liens">
+                    <a class="utilisateur_liens-item" href="#">Passer au compte Designer</a>
+                    <hr>
+                    <a class="utilisateur_liens-item" href="#">Recommander StylishPhone</a>
+                    <hr>
+                    <a class="utilisateur_liens-item" href="#">Conditions d'utilisation</a>
                 </div>
             </div>
-            
-            <div class="utilisateur_recommandations">
-                <h2>Nos recommandations :</h2>
-                <div class="utilisateur_recommandations-item">
-                    <img src="images/coque_rosace.png"/>
-                    <h3 class="utilisateur_recommandations-nom">Coque smartphone rosace</h3>
+
+            <div class="utilisateur_droite">
+                <div class="utilisateur_infos">
+                    <p><b>Téléphone actuel:</b> Iphone 7</p>
+                    <p><b>Type de profil:</b> Client <a href="#">-Comment devenir Designer ?-</a></p>
+                    <p><b>Tags :</b></p>
+                    <ul class="utilisateur_infos-tags">
+                        <li><button>x</button>Abstrait</li>
+                        <li><button>x</button>Nature</li>
+                        <li><button>x</button>Ethnique</li>
+                    </ul>
                 </div>
-                <div class="utilisateur_recommandations-item">
-                    <img src="images/coque_glace2.png"/>
-                    <h3 class="utilisateur_recommandations-nom">Coque smartphone motif glaces</h3>
+
+                <div class="utilisateur_articles">
+                    <h2>Dernier(s) article(s) acheté(s) :</h2>
+                    <div class="utilisateur_articles-item">
+                        <img src="images/coque_union_jack.png" alt="coque union jack">
+                        <h3 class="utilisateur_articles-nom">Coque smartphone Union Jack</h3>
+                    </div>
+                    <div class="utilisateur_articles-item">
+                        <img src="images/coque_glace.png" alt="coque glace"/>
+                        <h3 class="utilisateur_articles-nom">Coque smartphone crème glacée</h3>
+                    </div>
+                    <div class="utilisateur_articles-item">
+                        <img src="images/coque_fleurs.png" alt="coque fleurs brunes"/>
+                        <h3 class="utilisateur_articles-nom">Coque smartphone fleurs</h3>
+                    </div>
+                    <div class="utilisateur_articles-item">
+                        <img src="images/coque_rosace_bleue.png" alt="coque fleurs brunes"/>
+                        <h3 class="utilisateur_articles-nom">Coque smartphone rosace bleue</h3>
+                    </div>
                 </div>
-                <div class="utilisateur_recommandations-item">
-                    <img src="images/coque_fleurs_bleu.png"/>
-                    <h3 class="utilisateur_recommandations-nom">Coque smartphone motif fleur bleue</h3>
-                </div>
-                <div class="utilisateur_recommandations-item">
-                    <img src="images/coque_abstraite.png"/>
-                    <h3 class="utilisateur_recommandations-nom">Coque smartphone motif abstrait</h3>
+
+                <div class="utilisateur_recommandations">
+                    <h2>Nos recommandations :</h2>
+                    <div class="utilisateur_recommandations-item">
+                        <img src="images/coque_rosace.png" alt="coque rosace"/>
+                        <h3 class="utilisateur_recommandations-nom">Coque smartphone rosace</h3>
+                    </div>
+                    <div class="utilisateur_recommandations-item">
+                        <img src="images/coque_glace2.png" alt="coque glaces"/>
+                        <h3 class="utilisateur_recommandations-nom">Coque smartphone motif glaces</h3>
+                    </div>
+                    <div class="utilisateur_recommandations-item">
+                        <img src="images/coque_fleurs_bleu.png" alt="coque fleur bleue"/>
+                        <h3 class="utilisateur_recommandations-nom">Coque smartphone motif fleur bleue</h3>
+                    </div>
+                    <div class="utilisateur_recommandations-item">
+                        <img src="images/coque_abstraite.png" alt="coque motif abstrait"/>
+                        <h3 class="utilisateur_recommandations-nom">Coque smartphone motif abstrait</h3>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
         <footer>
             <div class="footer_text">
                 <p class="footer_p">Crédits</p>
